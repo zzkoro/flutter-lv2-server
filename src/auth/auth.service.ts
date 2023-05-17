@@ -36,7 +36,7 @@ export class AuthService {
     };
 
     return this.jwtService.sign(payload, {
-      expiresIn: isRefreshToken ? '1d' : '300s',
+      expiresIn: isRefreshToken ? '1d' : '1800s',
     });
   }
 
